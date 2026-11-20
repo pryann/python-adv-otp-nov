@@ -15,6 +15,8 @@ async def post_request():
 async def main():
     get = asyncio.create_task(get_request())
     post = asyncio.create_task(post_request())
+    # post.done()
+    # post.cancelled()
     # await get
     # await post
     await get, post

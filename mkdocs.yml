@@ -1,0 +1,8 @@
+site_name: My Docs
+hooks:
+    - docs_hooks.py
+plugins:
+    - mkdocstrings:
+          handlers:
+              python:
+                  paths: ['.']
